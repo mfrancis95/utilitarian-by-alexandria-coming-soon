@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(font.ttf);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+     }
+}
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        font-size: 2em;
+    }
+
+}
+
+body {
+    align-items: center;
+    background-color: #131313;
+    color: white;
+    display: flex;
+    font-family: 'Outfit';
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 80%;
+}
+
+main > * {
+    animation: fadeIn ease 3s;
+    animation-fill-mode: both;
+}
+
+img {
+    animation-delay: 0.5s;
+}
+
+h1 {
+    animation-delay: 0.75s;
+    font-weight: lighter;
+    margin-top: 0;
+}
+
+h2 {
+    animation-delay: 1s;
+    font-weight: lighter;
+}
+
+form {
+    animation-delay: 1.25s;
+    margin: 2em 0;
+}
+
+input {
+    background: transparent;
+    color: white;
+    font-family: inherit;
+    font-size: 1.25rem;
+}
+
+input[type=email] {
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    transition: border-bottom-color 0.25s;
+}
+
+input[type=email]:focus {
+    border-bottom-color: #38ef7d;
+}
+
+input[type=submit] {
+    border: 2px solid gray;
+}
